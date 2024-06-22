@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2019",                               /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ES2021', or 'ESNEXT'. */
+    "lib": ["ESNext"],                                /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+
+    /* Modules */
+    "resolveJsonModule": true,                        /* Enable importing .json files. */
+    "module": "ESNext",                               /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "declaration": false,                             /* Generates corresponding '.d.ts' file. */
+    "moduleResolution": "node",                       /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+
+    /* Emit */
+    "noEmit": true,                                   /* Do not emit outputs. */
+
+    /* Interop Constraints */
+    "isolatedModules": true,                          /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "allowSyntheticDefaultImports": true,             /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+    "esModuleInterop": true,                          /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "forceConsistentCasingInFileNames": true,         /* Disallow inconsistently-cased references to the same file. */
+
+    /* Type Checking */
+    "strict": true,                                   /* Enable all strict type-checking options. */
+    "noImplicitThis": true,                           /* Enable error reporting when 'this' is given the type 'any'. */
+    "useUnknownInCatchVariables": false,              /* Default catch clause variables as 'unknown' instead of 'any'. */
+    // "noUnusedLocals": true, *                      /* Enable error reporting when local variables aren't read. */
+    // "noUnusedParameters": true, *                  /* Raise an error when a function parameter isn't read. */
+    // "exactOptionalPropertyTypes": true, *          /* Interpret optional property types as written, rather than adding 'undefined'. */
+    // "noImplicitReturns": true, *                   /* Enable error reporting for codepaths that do not explicitly return in a function. */
+    "noFallthroughCasesInSwitch": true,               /* Enable error reporting for fallthrough cases in switch statements. */
+    // "noUncheckedIndexedAccess": true, *            /* Add 'undefined' to a type when accessed using an index. */
+    "noImplicitOverride": true,                       /* Ensure overriding members in derived classes are marked with an override modifier. */
+    // "noPropertyAccessFromIndexSignature": true,    /* Enforces using indexed accessors for keys declared using an indexed type. */
+    "allowUnusedLabels": false,                       /* Disable error reporting for unused labels. */
+    "allowUnreachableCode": false,                    /* Disable error reporting for unreachable code. */
+
+    /* Completeness */
+    "skipLibCheck": true,                             /* Skip type checking of declaration files. */
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+}

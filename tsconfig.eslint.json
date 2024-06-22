@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    /* Modules */
+    "baseUrl": ".",                                   /* Specify the base directory to resolve non-relative module names. */
+    "paths": {                                        /* Specify a set of entries that re-map imports to additional lookup locations. */
+      "src/*": ["src/*"]
+    },
+    "rootDir": "./src",                               /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+  },
+}
