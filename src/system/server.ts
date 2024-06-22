@@ -6,7 +6,14 @@ import 'regenerator-runtime/runtime'
 import http from 'http'
 import App from '..'
 
+import { redis } from './redis'
 import { loadSocketClient } from './sockets'
+
+
+// connect redis
+(async () => {
+  await redis.connect()
+})()
 
 // controllers
 
@@ -54,11 +61,9 @@ const onError = (error: any) => {
     case 'EACCES':
       console.error(`${bind} requires elevated privileges`)
       process.exit(1)
-      break
     case 'EADDRINUSE':
       console.error(`${bind} is already in use`)
       process.exit(1)
-      break
     default:
       throw error
   }
